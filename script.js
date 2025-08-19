@@ -21,7 +21,10 @@ const dropdown = document.getElementById("produtos");
 
 produtos.forEach(produto => {
     const optionElement = document.createElement("option");
-    // optionElement.value = produto.toLowerCase();
     optionElement.textContent = produto.produto;
     dropdown.appendChild(optionElement);
 });
+
+function irParaEstoque() {
+    window.location.href = "estoque.html";
+}
