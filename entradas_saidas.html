@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estoque</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
     <header>
@@ -13,7 +14,70 @@
         <button onclick="">Voltar para Lançamentos</button>
     </header>
 
-    
+    <table>
+        <thead>
+          <tr>
+            <th>PRODUTO</th>
+            <th>ENTRADA</th>
+            <th>SAÍDA</th>
+            <th>SALDO</th>
+            <th>SITUAÇÃO</th>
+            <th>ALARME</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>RÉGUA</td>
+            <td>6</td>
+            <td>4</td>
+            <td>2</td>
+            <td>COMPRAR</td>
+            <td><span class="alarme vermelho"></span></td>
+          </tr>
+          <tr>
+            <td>LÁPIS</td>
+            <td>15</td>
+            <td>12</td>
+            <td>3</td>
+            <td>COMPRAR</td>
+            <td><span class="alarme vermelho"></span></td>
+          </tr>
+          <tr>
+            <td>CADERNO</td>
+            <td>50</td>
+            <td>22</td>
+            <td>28</td>
+            <td>OK</td>
+            <td><span class="alarme verde"></span></td>
+          </tr>
+          <tr>
+            <td>COLA</td>
+            <td>15</td>
+            <td>0</td>
+            <td>15</td>
+            <td>OK</td>
+            <td><span class="alarme verde"></span></td>
+          </tr>
+          <tr>
+            <td>CANETA</td>
+            <td>125</td>
+            <td>11</td>
+            <td>114</td>
+            <td>OK</td>
+            <td><span class="alarme verde"></span></td>
+          </tr>
+          <tr>
+            <td>PAPEL</td>
+            <td>10</td>
+            <td>4</td>
+            <td>6</td>
+            <td>COMPRAR</td>
+            <td><span class="alarme vermelho"></span></td>
+          </tr>
+        </tbody>
+      </table>
+
+
     
 </body>
 </html>
