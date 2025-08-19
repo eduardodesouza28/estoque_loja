@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lançamentos</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <header>
+    <h1>Histórico de Lançamentos</h1>
+    <button onclick="irParaHome()">Home</button>
+    <button onclick="irParaEstoque()">Estoque</button>
+    <button onclick="irParaLancamentos()">Novo Lançamento</button>
+  </header>
+
+  <table border="1">
+    <thead>
+      <tr>
+        <th>DATA</th>
+        <th>TIPO</th>
+        <th>DESCRIÇÃO</th>
+        <th>PRODUTO</th>
+        <th>QUANTIDADE</th>
+      </tr>
+    </thead>
+    <tbody id="tabela-lancamentos">
+      <!-- Linhas criadas pelo JS -->
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
