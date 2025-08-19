@@ -4,7 +4,7 @@ class Produto {
         this.entradas = entradas;
         this.saidas = saidas;
         this.qtd = qtd;
-        this.situação = situação < 5? "comprar" : "ok";
+        this.situação = qtd < 5? "comprar" : "ok";
     }
 }
 let regua = new Produto("regua", 6, 4, 2)
@@ -15,5 +15,13 @@ let caneta = new Produto("caneta", 125, 11, 114)
 let papel = new Produto("papel", 10, 4, 6)
 
 let produtos = [regua, lapis, caderno, cola, caneta, papel];
-let pedidos = [{ data, tipo, descrição, produto, qtd }];
+// let pedidos = [{ data, tipo, descrição, produto, qtd }];
 
+const dropdown = document.getElementById("produtos");
+
+produtos.forEach(produto => {
+    const optionElement = document.createElement("option");
+    // optionElement.value = produto.toLowerCase();
+    optionElement.textContent = produto.produto;
+    dropdown.appendChild(optionElement);
+});
