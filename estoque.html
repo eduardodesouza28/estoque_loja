@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="PT-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Entrada / Saída</title>
 </head>
 <body>
     <header>
         <h1>Controle de Estoque</h1>
-    </header>
 
+        <button onclick="">Voltar ao Estoque</button>
+    </header>
     <form>
         <label >Data</label>
         <input type="date" name="data" required>
@@ -38,18 +40,17 @@
 
         <label>Produto</label>
         
-        <select name="produto" required>
-        
+        <select name="produto" required>       
             <option>Selecione uma Opção</option>
-            <option value="caneta">Caneta</option>
-            <option value="lapis">Lápis</option>        
-            <option value="devolucao">Devolução</option>
-
         </select>
+        <br><br>
 
+        <label >Quantidade</label>
+        <input type="number" id="quantidade" name="quantidade" min="1"  max="200" value="1">
 
+        <br><br>
 
-
+        <button>Confirmar</button>
 
     </form>
     
