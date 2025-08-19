@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estoque</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <h1>Gerenciamento de Estoque</h1>
+
+        <button onclick="irParaLancamentos()">Voltar para Lançamentos</button>
+    </header>
+
+    <table border="1">
+        <thead>
+          <tr>
+            <th>PRODUTO</th>
+            <th>ENTRADA</th>
+            <th>SAÍDA</th>
+            <th>SALDO</th>
+            <th>SITUAÇÃO</th>
+            <th>ALARME</th>
+          </tr>
+        </thead>
+        <tbody id="tabela-produtos">
+          <!-- linhas criadas pelo JS -->
+        </tbody>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
